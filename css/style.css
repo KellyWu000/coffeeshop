@@ -262,7 +262,7 @@ img {
 .banner {
   width: 100%;
   height: 500px;
-  background: url(images/banner.jpg) /* 告訴瀏覽器背景圖片不要重覆顯示 */
+  background: url(../images/banner.jpg) /* 告訴瀏覽器背景圖片不要重覆顯示 */
     no-repeat;
   background-size: cover;
   background-position: center;
