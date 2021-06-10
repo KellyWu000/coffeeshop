@@ -1,0 +1,432 @@
+<!DOCTYPE >
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0, shrink-to-fit=no"/>
+    <script src="https://kit.fontawesome.com/4971a91f41.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500&display=swap"rel="stylesheet"
+/>
+<link rel="stylesheet" href="css/style.css">
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"
+      integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g=="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      crossorigin="anonymous"
+    />
+  </head>
+  <style>
+     .pro-text{
+         margin-right: 25px;
+     }
+    .pro-text .product-menu {
+    margin: 0;padding: 0;
+      background-color: rgb(118, 133, 119);     
+    
+    }
+
+    .pro-text ul li {
+      border: 1px solid #ebebeb;
+    }
+
+    .pro-text ul li a:hover {
+      font-size: 22px;
+      background-color: #ebebeb;
+      color: #3f5c46;
+    }
+
+    .pro-text .fas{
+    position: absolute;
+    top: 50px;
+    left: 250px;
+    font-size: 30px;
+    color:#ebebeb ;
+    }
+    .pro-text .fas:hover{
+        transform: scale(1.5);
+    }
+     a {
+      display: block;
+      color: #3f5c46;
+    }
+    ul {
+      list-style-type: none;
+    }
+
+    .slide_toggle {
+      background-color: #eaf0ed;
+      color: #3f5c46;
+    }
+    .slide_toggle:hover {
+      cursor: pointer;
+      color: rgb(118, 133, 119);
+      font-size: 18px;
+      text-decoration: underline;
+    }
+    .slide_toggle + div {
+      display: none;
+      
+      height: 150px;
+      line-height: 2;
+      padding: 5px;
+      background-color: rgb(118, 133, 119);
+      color: #eaf0ed;
+      border-radius: 5px;
+    }
+
+
+   
+    .productList-card{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+ .productList-card .logo {
+        margin: 0;
+        padding: 0;
+      width: 250px;
+      height: 300px;
+     object-fit: cover;
+    
+    }
+
+    .product a:hover{
+        cursor: pointer;
+      color: rgb(118, 133, 119);
+      font-size: 24px;
+    }
+    .productList-card li{
+      position: relative;
+    }
+    .productList-card .tag {
+  position: absolute;
+  background-color: #3f5d45; 
+  opacity: 0.8;
+  color: #eaf0ed;
+  left: 20px;
+  top: 0px;
+  letter-spacing: 4px;
+  writing-mode: vertical-lr; /* 垂直寫法 */
+  padding: 8px;
+}
+
+.productList-card .far {
+  position: absolute;
+  right: 20px;
+  font-size: 20px;
+  top: 20px;
+  color: #eaf0ed;
+}
+.productList-card .far:hover{
+  color: rgb(161, 51, 51);
+  font-size: 22px;
+}
+.productList-card-body{
+  border-bottom: 1px solid #eaf0ed;
+        border-right: 1px solid #eaf0ed;
+        border-left: 1px solid #eaf0ed;
+        line-height: 50px;
+        font-size: 20px;
+        text-align: center;
+}
+.productList-card-body h2 {
+  width: 180px;
+  font-weight: bold;
+  color: #3f5d45;
+  font-size: 20px;
+}
+.productList-card-body span {
+  width: 120px;
+  display: block;
+  font-size: 20px;
+  text-align: center;
+  line-height: 60px;
+  display: block;
+  color: #3f5d45;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+.productList-card-body:hover{
+   cursor: pointer;
+}
+.productList-card-body span:hover{
+  color:rgb(161, 51, 51);;
+ 
+  
+}
+    ul.pagination {
+      padding: 0;
+      margin: 50px auto;
+    }
+
+    ul.pagination li {
+      display: inline;
+    }
+
+    ul.pagination li a {
+      color: black;
+      float: left;
+      padding: 5px 12px;
+      transition: background-color 0.3s;
+      border: 1px solid #ddd;
+    }
+
+    ul.pagination li a.active {
+      background-color: rgb(149, 179, 151);
+      color: white;
+      border: 1px solid #e0e7e0;
+    }
+
+    ul.pagination li a:hover:not(.active) {
+      background-color: #ddd;
+    }
+    @media (max-width: 768px) {
+    .pro-text .fas{
+    position: absolute;
+    top: 50px;
+    left: 350px;
+    font-size: 30px;
+    color:#ebebeb ;
+    }
+    .pro-text .fas:hover{
+        transform: scale(1.5);
+    }    
+}
+    
+  </style>
+
+  <body>
+    <div class="container-fluid">
+    <div class="row  ">
+      <div
+        class="
+          header
+          col-lg-12 col-md-12
+          d-flex
+          justify-content-between
+          align-items-center
+        "
+      >
+        <div class="logo">
+          <h1>
+            <a href="#">DECO.CO</a>
+          </h1>
+        </div>
+        <ul class="menu d-flex justify-content-between">
+          <li><a href="coffeeshop.html">首頁</a></li>
+          <li><a href="product.html">產品</a></li>
+          <li><a href="about.html">關於我們</a></li>
+          <li><a href="contact.html">聯絡我們</a></li>
+        </ul>
+        <form class="header-search">
+          <input type="search" id="" />
+          <button><i class="fa fa-search"></i></button>
+        </form>
+        <a href="#" class="showmenu">☰</a>
+      </div>
+      <div class="row d-flex justify-content-between">
+        <div class="col-12 col-md-3">
+
+            
+          <div class="pro-text">
+
+          
+            <ul>
+              <li class="product-menu text-white text-center p-2 " >甜點類別</li>
+           <li>
+                <a href="#" class="text-decoration-none text-center p-2"
+                  >蛋糕</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-center p-2"
+                  >飲料</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-center p-2"
+                  >麵包</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-center p-2"
+                  >人氣TOP10</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 col-md-9">
+    
+            <div class="row">
+              <div class="product col-md-4 col-sm-12 mt-5 ">
+               
+                <ul class="productList-card">
+                  <li>
+                  <div class="tag">本日精選</div>
+                  <i class="far fa-heart"></i> 
+                  <img class="logo rounded-3 w-100 mx-0" src="images/des-1.jpg  " />
+                  <div class="productList-card-body d-flex justify-content-around fs-5 align-items-center mt-3">
+                    <h2>巧克力布朗尼</h2>
+                    <span> NT$250</span>
+                  </div>
+                
+                <div class="slide_toggle rounded-3 p-2 text-center fw-bolder">
+                  詳細介紹
+                </div>
+             
+                <div>
+                  無糖、無澱粉的巧克力布朗尼，全杏仁粉配方，巧克力控必吃的低碳甜點，輕鬆無負擔的享受甜食，療癒你的心。
+                </div> 
+              </li>
+
+              </div>
+              <div class="product col-md-4 col-sm-12 mt-5">
+                <ul class="productList-card">
+                  <li>
+                  <div class="tag">本日精選</div>
+                  <i class="far fa-heart"></i> 
+                  <img class="logo rounded-3 w-100 mx-0" src="images/des-6.jpg  " />
+                  <div class="productList-card-body d-flex justify-content-around fs-5 align-items-center mt-3">
+                    <h2>香草戚風蛋糕</h2>
+                    <span> NT$250</span>
+                  </div>
+                <div class="slide_toggle rounded-3 p-2 text-center fw-bolder w-100">
+                  詳細介紹
+                </div>
+                <div>
+                  使用新鮮香草籽搭配每天新鮮現打鮮奶油，組合出單純的基本素烤戚風蛋糕，口感細緻柔軟，平凡中有股低調的幸福。
+                </div>
+                </li>
+              </div>
+              <div class="product col-md-4 col-sm-12 mt-5 ">
+               
+                <ul class="productList-card">
+                  <li>
+                  <div class="tag">本日精選</div>
+                  <i class="far fa-heart"></i> 
+                  <img class="logo rounded-3 w-100 mx-0" src="images/des-5.jpg  " />
+                  <div class="productList-card-body d-flex justify-content-around fs-5 align-items-center mt-3">
+                    <h2>莓果杯子蛋糕  </h2>
+                    <span> NT$100</span>
+                  </div>
+                
+                <div class="slide_toggle rounded-3 p-2 text-center fw-bolder">
+                  詳細介紹
+                </div>
+             
+                <div>
+                  用黃豆粉、杏仁粉，取代精緻澱粉、精製糖，酸酸甜甜的覆盆莓配上同樣為香草基底的蛋糕體，美味與營養兼具的覆盆莓杯子蛋糕。
+
+
+                </div> 
+              </li>
+
+              </div>
+             
+              <div class="product col-md-4 col-sm-12 mt-5 ">
+               
+                <ul class="productList-card">
+                  <li>
+                  <div class="tag">本日精選</div>
+                  <i class="far fa-heart"></i> 
+                  <img class="logo rounded-3 w-100 mx-0" src="images/des-2.jpg  " />
+                  <div class="productList-card-body d-flex justify-content-around fs-5 align-items-center mt-3">
+                    <h2>提拉米蘇咖啡</h2>
+                    <span> NT$150</span>
+                  </div>
+                
+                <div class="slide_toggle rounded-3 p-2 text-center fw-bolder">
+                  詳細介紹
+                </div>
+             
+                <div>
+                  靈感來自於美食家最愛的義大利甜點，帶有巧克力的頂級濃縮咖啡特調給您最完美的寵溺時光。
+                </div> 
+              </li>
+
+              </div>
+              <div class="product col-md-4 col-sm-12 mt-5 ">
+               
+                <ul class="productList-card">
+                  <li>
+                  <div class="tag">本日精選</div>
+                  <i class="far fa-heart"></i> 
+                  <img class="logo rounded-3 w-100 mx-0" src="images/des-8.jpg  " />
+                  <div class="productList-card-body d-flex justify-content-around fs-5 align-items-center mt-3">
+                    <h2>燕麥奶拿鐵</h2>
+                    <span> NT$150</span>
+                  </div>
+                
+                <div class="slide_toggle rounded-3 p-2 text-center fw-bolder">
+                  詳細介紹
+                </div>
+             
+                <div>
+                  燕麥片有豐富的營養價值，高纖健康訴求的營養品，搭配上酸甜的蔓越莓，想要當零食吃也不用太有罪惡感呢!
+                </div> 
+              </li>
+
+              </div>
+              <div class="product col-md-4 col-sm-12 mt-5 ">
+               
+                <ul class="productList-card">
+                  <li>
+                  <div class="tag">本日精選</div>
+                  <i class="far fa-heart"></i> 
+                  <img class="logo rounded-3 w-100 mx-0" src="images/des-4.jpg  " />
+                  <div class="productList-card-body d-flex justify-content-around fs-5 align-items-center mt-3">
+                    <h2>巧克力聖代</h2>
+                    <span> NT$250</span>
+                  </div>
+                
+                <div class="slide_toggle rounded-3 p-2 text-center fw-bolder">
+                  詳細介紹
+                </div>
+             
+                <div>
+                巧克力控必吃的低碳甜點，輕鬆無負擔的享受甜食，療癒你的心。
+                </div> 
+              </li>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <ul class="pagination justify-content-center text-center">
+        <li><a href="#" text-decoration-none class="rounded-3 m-1">«</a></li>
+        <li><a href="#" text-decoration-none class="rounded-3 m-1">1</a></li>
+        <li>
+          <a class="active rounded-3 m-1" href="#" text-decoration-none>2 </a>
+        </li>
+        <li><a href="#" text-decoration-none class="rounded-3 m-1">3</a></li>
+        <li><a href="#" text-decoration-none class="rounded-3 m-1">4</a></li>
+        <li><a href="#" text-decoration-none class="rounded-3 m-1">5</a></li>
+        <li><a href="#" text-decoration-none class="rounded-3 m-1">»</a></li>
+      </ul>
+    </div>
+</div>
+
+    <script>
+      $(".slide_toggle").click(function () {
+        console.log($(this));
+        $(this).next().slideToggle();
+      });
+
+      $(document).ready(function () {
+            $('.showmenu').on('click', function (e) {
+                e.preventDefault();
+                $('body').toggleClass('menu-show');
+            });
+        });
+    </script>
+  </body>
+</html>
